@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanostores Calculator</title>
+</head>
+
+<body>
+  <main>
+    <h1>Nanostores Calculator</h1>
+    <p>Type in two numbers. </p>
+
+    <div class="inputs">
+      <label>A <input id="input-a" type="number" value="6"></label>
+      <label>B <input id="input-b" type="number" value="3"></label>
+    </div>
+
+    <p id="warning" hidden>Heads up: dividing by zero gives Infinity or NaN.</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>A + B</th>
+          <td id="out-sum"></td>
+        </tr>
+        <tr>
+          <th>A − B</th>
+          <td id="out-difference"></td>
+        </tr>
+        <tr>
+          <th>A × B</th>
+          <td id="out-product"></td>
+        </tr>
+        <tr>
+          <th>A ÷ B</th>
+          <td id="out-quotient"></td>
+        </tr>
+        <tr>
+          <th>A mod B</th>
+          <td id="out-remainder"></td>
+        </tr>
+        <tr>
+          <th>A ^ B</th>
+          <td id="out-power"></td>
+        </tr>
+        <tr>
+          <th>Larger</th>
+          <td id="out-max"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
